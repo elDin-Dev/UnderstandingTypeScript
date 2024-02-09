@@ -5,5 +5,5 @@ function add(num1, num2) {
     return num1 + num2;
 }
 button === null || button === void 0 ? void 0 : button.addEventListener("click", function () {
-    console.log(add(input1 === null || input1 === void 0 ? void 0 : input1.value, input2.value));
+    console.log(add(+input1.value, +input2.value));
 });
