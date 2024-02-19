@@ -1,21 +1,12 @@
-function add(n1: number, n2: number, printResult:boolean) {
-    if (typeof n1 !== 'number' || typeof n2 !== 'number') {
-        throw new Error('Incorrect number');
-
-    }
-    const result:number=n1 + n2;
-    if (printResult) {
-        console.log("Result:" + result);
-    }
-
-    return result;
-    
+// objects
+const person: {
+    // here is a kind of the interface of the object
+    name: string,
+    age: number
+} = {
+    name: "alex",
+    age: 48
 }
 
-const number1 = 5;
-const number2 = 3.5;
-const printResult = true;
-
-const result = add(number1, number2,printResult);
-console.log(result);
+console.log(person.name);
 
