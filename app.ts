@@ -6,4 +6,9 @@ function printResult(n: number):void {
     console.log("Result: " + n);
 }
 
-printResult(add(8,2));
+printResult(add(8, 2));
+
+
+// combineValues could hold a pointer to any funciton 
+// that takes no paramters a returns a number.
+let combineValues: () => number;
