@@ -38,3 +38,23 @@ for (const hobby in person.hobbies){
 if (person.role === Role.ADMIN) {
     console.log("It is ADMIN")
 }
+
+
+// --- 
+
+function combine(par1: string | number, par2: string | number) {
+
+    let result;
+
+    if (typeof par1 === 'number' && typeof par2 === 'number') {
+        result= par1 + par2;    
+    }
+    else {
+        result = par1.toString() + par2.toString();
+        
+    }
+}
+
+const comb = combine('4','1')
+
+console.log(comb);
