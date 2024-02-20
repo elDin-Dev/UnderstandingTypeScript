@@ -53,8 +53,13 @@ function combine(par1: string | number, par2: string | number) {
         result = par1.toString() + par2.toString();
         
     }
+    return result;
 }
 
-const comb = combine('4','1')
+let comb = combine(4, 1);
+
+console.log(comb);
+
+comb = combine('alex', ' sandín');
 
 console.log(comb);
