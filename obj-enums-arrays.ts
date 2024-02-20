@@ -40,7 +40,7 @@ if (person.role === Role.ADMIN) {
 }
 
 
-
+type Combinable = string | number;
 
 // --- 
 
