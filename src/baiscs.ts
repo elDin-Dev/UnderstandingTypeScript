@@ -14,8 +14,8 @@ function add(n1: number, n2: number, printResult:boolean) {
 
 const number1 = 5;
 const number2 = 3.5;
-const printResult = true;
+const printResultI = true;
 
-const result = add(number1, number2,printResult);
+const result = add(number1, number2,printResultI);
 console.log(result);
 
