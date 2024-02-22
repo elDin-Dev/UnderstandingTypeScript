@@ -1,21 +1,7 @@
-// Arrays
-const hobbies = ['Sports', 'Cooking'];
-const activeHobbies = ['Hiking'];
-
-//Traditional push
-//activeHobbies.push(hobbies[0], hobbies[1]);
-
-//spread operator
-activeHobbies.push(...hobbies);
-
-const personA = {
-    name: 'alex',
-    age: 30
-}
-
-//assign a pointer not a copy
-const copyPerson = personA;
-
-//copying by using the spread operator
-const copyPersonS = [...personA];
-
+const addNumsA = (...nums: number[]): number => {
+        return nums.reduce((currentResult, currentValue) => {
+        return currentResult + currentValue;
+    },0 )
+    
+} 
+console.log(addNumsA(3,5,6.56,56))
