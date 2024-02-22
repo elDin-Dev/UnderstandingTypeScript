@@ -1,12 +1,21 @@
-// Function formats
+// Arrays
+const hobbies = ['Sports', 'Cooking'];
+const activeHobbies = ['Hiking'];
 
-const addNums = (a: number, b: number) => {
-     return a + b;
+//Traditional push
+//activeHobbies.push(hobbies[0], hobbies[1]);
+
+//spread operator
+activeHobbies.push(...hobbies);
+
+const personA = {
+    name: 'alex',
+    age: 30
 }
-const addNums2 = (a: number, b: number) => a + b;
 
-// With defaul values.
-const addNums3 = (a: number, b: number = 9) => a + b;
+//assign a pointer not a copy
+const copyPerson = personA;
 
+//copying by using the spread operator
+const copyPersonS = [...personA];
 
-const printMyLog = (a: number) => console.log(a);
