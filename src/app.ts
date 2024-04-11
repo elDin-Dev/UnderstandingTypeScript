@@ -9,7 +9,7 @@ class Department {
   }
   */
 
-  constructor(private id: string, private name: string) {}
+  constructor(private readonly id: string, private name: string) {}
   // Adding here as a hint 'this:Department' we ensure that typescript
   // is going to help us avoid error with 'this hell'
   describe(this: Department) {
